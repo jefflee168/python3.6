@@ -8,8 +8,8 @@ import psutil
 import jinja2
 import yagmail
 
-EMAIL_USER = ''
-EMAIL_PASSWORD = ''
+EMAIL_USER = 'qq86116193@163.com'
+EMAIL_PASSWORD = '123456'
 RECIPIENTS = ['86116193@qq.com']
 
 def render(tpl_path, **kwargs):
@@ -22,10 +22,12 @@ def bytes2human(n):
     symbols = ('K','M','G','T','P','E','Z','Y')
     prefix = {}
     for i, s in enumerate(symbols):
+        prefix[s] = 1 << (i + 1) * 10
+    for s in reversed(symbols):
         if n >= prefix[s]:
             value = float(n) / prefix[s]
-            return '%.1f%s' % (value,s)
-    return "%sB" % n
+            return '%.1f%s' % (value, s)
+    return  "%sB" % n
 
 def get_cpu_info():
     cpu_count = psutil.cpu_count()
@@ -37,7 +39,7 @@ def get_memory_info():
 
     mem_total = bytes2human(virtual_mem.total)
     mem_percent = bytes2human(virtual_mem.percent)
-    mem_free = bytes2human(virtual_mem.free + virtual_mem.buffers + virtual_mem.cached)
+    mem_free = bytes2human(virtual_mem.free)
     mem_used = bytes2human(virtual_mem.total * (virtual_mem.percent / 100))
     return dict(mem_total=mem_total, mem_percent=mem_percent, mem_free=mem_free, mem_used=mem_used)
 
@@ -48,6 +50,8 @@ def get_disk_info():
     disk_percent = bytes2human(disk_usage.percent)
     disk_free = bytes2human(disk_usage.free)
     disk_used = bytes2human(disk_usage.used)
+
+    return dict(disk_total=disk_total, disk_percent=disk_percent, disk_free=disk_free, disk_used=disk_used)
 
 def get_boot_info():
     boot_time = datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d %H:%M:%S")
