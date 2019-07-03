@@ -15,7 +15,8 @@ print('Connected by ', addr)
 data = conn.recv(1024)
 
 while 1:
-    command = raw_input("Enter shell command or quit: ")
+    command = input("Enter shell command or quit: ")
+    conn.send('%s' % command.encode())
     if command == "quit": break
     data = conn.recv(1024)
     print(data)
