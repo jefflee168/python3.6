@@ -3,7 +3,7 @@
 import socket,subprocess
 
 # 设置服务器的IP地址与端口
-HOST = '10.0.0.101'
+HOST = '127.0.0.1'
 PORT = 11443
 
 # 创建 socket 对象

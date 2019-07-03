@@ -2,7 +2,7 @@
 
 from socket import *
 
-HOST =  '10.0.0.101'
+HOST =  ''
 PORT = 11443
 
 # 创建 socket 对象
