@@ -2,21 +2,25 @@
 
 import socket   # 导入 socket 模块
 
-s = socket.socket()     # 创建socket 对象
-
 # 获取本地主机名称
-host = socket.gethostname()
-
+HOST = ''
 # 设置端口
-port = 50058
+PORT = 50058
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)     # 创建socket 对象
 
 # 绑定端口
-s.bind((host, port))
+s.bind((HOST, PORT))
 
 # 等待客户端连接
 s.listen(5)
-while True:
-    c,addr = s.accept()
-    print("连接地址: ", addr)
-    c.send("This is a testing.")
-    c.close()
+
+conn, addr = s.accept()
+print('Connected by ', addr)
+
+while 1:
+    data = conn.recv(1024)
+    if not data: break
+    conn.sendall(data)
+
+conn.close()

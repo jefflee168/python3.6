@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25a11489-c067-45e9-b311-3b63047d35f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python3.6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python3.6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/socket/client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/socket/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1/backdoorclient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1/backdoorclient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1/backdoorserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1/backdoorserver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,21 +35,21 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="330">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/socket/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -81,14 +77,14 @@
         <option value="$PROJECT_DIR$/monitor2.py" />
         <option value="$PROJECT_DIR$/test1/backdoorserver.py" />
         <option value="$PROJECT_DIR$/test1/backdoorclient.py" />
-        <option value="$PROJECT_DIR$/socket/client.py" />
         <option value="$PROJECT_DIR$/socket/server.py" />
+        <option value="$PROJECT_DIR$/socket/client.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="559" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="694" />
+    <option name="y" value="40" />
     <option name="width" value="1440" />
     <option name="height" value="788" />
   </component>
@@ -107,6 +103,11 @@
             <path>
               <item name="python3.6" type="b2602c69:ProjectViewProjectNode" />
               <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python3.6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python3.6" type="b2602c69:ProjectViewProjectNode" />
@@ -286,16 +287,19 @@
       <workItem from="1557578645387" duration="1303000" />
       <workItem from="1557914446354" duration="6015000" />
       <workItem from="1562144356012" duration="1694000" />
+      <workItem from="1562150899705" duration="158000" />
+      <workItem from="1562154179207" duration="931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9012000" />
+    <option name="totallyTimeSpent" value="10101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="559" y="23" width="1440" height="788" extended-state="0" />
+    <frame x="694" y="40" width="1440" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945474" visible="true" weight="0.14306152" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945474" visible="true" weight="0.14735337" />
       <window_info id="Structure" order="1" sideWeight="0.50054526" side_tool="true" weight="0.29157782" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test1/backdoorserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -384,8 +381,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/socket/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
